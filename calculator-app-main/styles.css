@@ -1,0 +1,142 @@
+body {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.calc-screen {
+  border-radius: 10px;
+  width: 100%;
+  background-color: hsl(224, 36%, 15%);
+  height: 100px;
+  position: relative;
+  color: white;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-150%);
+  font-size: 50px;
+}
+.calc-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  gap: 10px;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calc-body {
+  background-color: hsl(223, 31%, 20%);
+  display: grid;
+
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  border-radius: 10px;
+}
+.btn {
+  font-family: inherit;
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  height: 50px;
+  width: 70px;
+  color: hsl(221, 14%, 31%);
+  font-weight: bold;
+  font-size: 26px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 0 hsl(28, 16%, 65%);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(30, 29%, 97%);
+}
+
+.reset,
+.equals,
+.del {
+  color: white;
+}
+.reset,
+.del {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px 0 hsl(224, 28%, 35%);
+}
+.reset:hover,
+.del:hover {
+  background-color: hsl(225, 32%, 68%);
+}
+.reset {
+  grid-column: 1 / 3;
+  width: 100%;
+}
+
+.equals {
+  grid-column: 3 / -1;
+  width: 100%;
+
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 4px 0 hsl(6, 70%, 34%);
+}
+.equals:hover {
+  background-color: hsl(6, 100%, 72%);
+}
+
+.calc-head {
+  width: 100%;
+  color: white;
+  height: 70px;  
+}
+.calc-head-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.functions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.function-btn {
+  width: 60px;
+  height: 25px;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 20px;
+  position: relative;
+}
+.functions > p {
+  font-size: 14px;
+}
+.function-ball {
+  background-color: hsl(6, 63%, 50%);
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.function-btns {
+  position: absolute;
+  display: flex;
+  top: -100%;
+  left: -5%;
+
+}
+.num-btn {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+
+}
